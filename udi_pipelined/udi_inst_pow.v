@@ -1,4 +1,4 @@
-module	udi_spect_dens	(
+module	udi_udi_inst_pow	(
 	input					gclk				,
 	input					gscanenable			,
 	input		[31:0]		in_rs				,

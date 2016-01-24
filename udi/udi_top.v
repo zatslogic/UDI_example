@@ -26,7 +26,7 @@ module	udi_top	(
 	//wire [`M14K_UDI_EXT_FROMUDI_WIDTH-1:0] /*[0:0]*/ UDI_fromudi	;
 	//// END Wire declarations made by MVP
 	
-	wire	[31:0]	udi_res				;	//1- comparing
+	wire	[31:0]	udi_res				;	
 	wire	[1:0]	udi_ctl_sum_mode_d	;	//0- none 1- +	2- +>> 3- bypass
 	wire			udi_ctl_res_sel_d	;	//1- comparing
 	wire			udi_ctl_thr_wr		;	//1-	wr_thr
@@ -78,7 +78,7 @@ module	udi_top	(
 			(UDI_ir_e[5:0]	==	UDI_0	||	UDI_ir_e[5:0]	==	UDI_1	||	UDI_ir_e[5:0]	==	UDI_2	||	UDI_ir_e[5:0]	==	UDI_3))
 			?	CTL_RES_CALC	:	CTL_RES_COMP	;
 
-	udi_spect_dens	udi_spect_dens_u(
+	udi_udi_inst_pow	udi_udi_inst_pow_u(
 		.gclk				(	UDI_gclk			),	//input				
 		.gscanenable		(	UDI_gscanenable		),	//input				
 		.in_rs				(	UDI_rs_e			),	//input	[31:0]		
