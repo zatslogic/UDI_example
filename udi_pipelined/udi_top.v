@@ -93,7 +93,7 @@ module	udi_top	(
 							)
 						)	?	1'b1	:	1'b0	;
 
-	udi_udi_inst_pow	udi_udi_inst_pow_u(
+	udi_inst_pow	udi_inst_pow_u(
 		.gclk				(	UDI_gclk			),	//input				
 		.gscanenable		(	UDI_gscanenable		),	//input				
 		.in_rs				(	UDI_rs_e			),	//input	[31:0]		
