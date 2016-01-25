@@ -78,7 +78,7 @@ module	udi_top	(
 			(UDI_ir_e[5:0]	==	UDI_0	||	UDI_ir_e[5:0]	==	UDI_1	||	UDI_ir_e[5:0]	==	UDI_2	||	UDI_ir_e[5:0]	==	UDI_3))
 			?	CTL_RES_CALC	:	CTL_RES_COMP	;
 
-	udi_udi_inst_pow	udi_udi_inst_pow_u(
+	udi_inst_pow	udi_inst_pow_u(
 		.gclk				(	UDI_gclk			),	//input				
 		.gscanenable		(	UDI_gscanenable		),	//input				
 		.in_rs				(	UDI_rs_e			),	//input	[31:0]		
